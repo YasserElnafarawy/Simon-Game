@@ -1,3 +1,4 @@
+
 var colors = ["green", "red", "yellow", "blue"];
 var randomSequence = [];
 var clickedSequence = [];
@@ -8,10 +9,7 @@ $(document).keydown(function(){
     if (!started) {
         getStart();
         started = true
-    } else if (jQuery.inArray(this.value, passwordArray) != -1) {
-        alert("THIS IS WORKING");
     }
-
 })
 
 
