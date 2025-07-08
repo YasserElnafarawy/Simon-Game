@@ -8,8 +8,12 @@ $(document).keydown(function(){
     if (!started) {
         getStart();
         started = true
-    }  
+    } else if (jQuery.inArray(this.value, passwordArray) != -1) {
+        alert("THIS IS WORKING");
+    }
+
 })
+
 
 $(".btn").click(function (){
     var clickedColor = $(this).attr("id");
